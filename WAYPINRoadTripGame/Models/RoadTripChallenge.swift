@@ -7,12 +7,38 @@ struct RoadTripChallenge: Identifiable, Equatable {
         case teamwork
         case photo
         case storytelling
+
+        var displayName: String {
+            switch self {
+            case .observation:
+                return "Observation"
+            case .trivia:
+                return "Trivia"
+            case .teamwork:
+                return "Teamwork"
+            case .photo:
+                return "Photo"
+            case .storytelling:
+                return "Storytelling"
+            }
+        }
     }
 
     enum Difficulty: String, CaseIterable {
         case easy
         case medium
         case hard
+
+        var displayName: String {
+            switch self {
+            case .easy:
+                return "Easy"
+            case .medium:
+                return "Medium"
+            case .hard:
+                return "Hard"
+            }
+        }
     }
 
     let id: UUID
