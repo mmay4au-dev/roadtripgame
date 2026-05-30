@@ -26,6 +26,15 @@
 		100000000000000000000012 /* MockTravelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000012 /* MockTravelStyles.swift */; };
 		100000000000000000000013 /* TravelStyleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000013 /* TravelStyleCard.swift */; };
 		100000000000000000000014 /* TravelStyleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000014 /* TravelStyleSelectionView.swift */; };
+		100000000000000000000015 /* RoleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000015 /* RoleOption.swift */; };
+		100000000000000000000016 /* MockRoleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000016 /* MockRoleOptions.swift */; };
+		100000000000000000000017 /* RoleSelectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000017 /* RoleSelectionCard.swift */; };
+		100000000000000000000018 /* ChallengeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000018 /* ChallengeBoard.swift */; };
+		100000000000000000000019 /* MockChallengeBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000019 /* MockChallengeBoards.swift */; };
+		10000000000000000000001A /* ChallengeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001A /* ChallengeBoardView.swift */; };
+		10000000000000000000001B /* ClaimableItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001B /* ClaimableItemCard.swift */; };
+		10000000000000000000001C /* ChallengeProgressHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001C /* ChallengeProgressHeader.swift */; };
+		10000000000000000000001D /* RecentClaimsTimeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001D /* RecentClaimsTimeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +58,15 @@
 		200000000000000000000012 /* MockTravelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTravelStyles.swift; sourceTree = "<group>"; };
 		200000000000000000000013 /* TravelStyleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelStyleCard.swift; sourceTree = "<group>"; };
 		200000000000000000000014 /* TravelStyleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelStyleSelectionView.swift; sourceTree = "<group>"; };
+		200000000000000000000015 /* RoleOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleOption.swift; sourceTree = "<group>"; };
+		200000000000000000000016 /* MockRoleOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRoleOptions.swift; sourceTree = "<group>"; };
+		200000000000000000000017 /* RoleSelectionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionCard.swift; sourceTree = "<group>"; };
+		200000000000000000000018 /* ChallengeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeBoard.swift; sourceTree = "<group>"; };
+		200000000000000000000019 /* MockChallengeBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChallengeBoards.swift; sourceTree = "<group>"; };
+		20000000000000000000001A /* ChallengeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeBoardView.swift; sourceTree = "<group>"; };
+		20000000000000000000001B /* ClaimableItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimableItemCard.swift; sourceTree = "<group>"; };
+		20000000000000000000001C /* ChallengeProgressHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeProgressHeader.swift; sourceTree = "<group>"; };
+		20000000000000000000001D /* RecentClaimsTimeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentClaimsTimeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +125,8 @@
 				200000000000000000000004 /* PlayerRole.swift */,
 				200000000000000000000005 /* TripParticipant.swift */,
 				200000000000000000000011 /* TravelStyle.swift */,
+				200000000000000000000015 /* RoleOption.swift */,
+				200000000000000000000018 /* ChallengeBoard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +165,8 @@
 			children = (
 				200000000000000000000008 /* MockChallenges.swift */,
 				200000000000000000000012 /* MockTravelStyles.swift */,
+				200000000000000000000016 /* MockRoleOptions.swift */,
+				200000000000000000000019 /* MockChallengeBoards.swift */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -153,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				20000000000000000000000B /* RoleSelectionView.swift */,
+				200000000000000000000017 /* RoleSelectionCard.swift */,
 				200000000000000000000013 /* TravelStyleCard.swift */,
 				200000000000000000000014 /* TravelStyleSelectionView.swift */,
 			);
@@ -172,6 +195,10 @@
 			isa = PBXGroup;
 			children = (
 				20000000000000000000000D /* ChallengeListView.swift */,
+				20000000000000000000001A /* ChallengeBoardView.swift */,
+				20000000000000000000001B /* ClaimableItemCard.swift */,
+				20000000000000000000001C /* ChallengeProgressHeader.swift */,
+				20000000000000000000001D /* RecentClaimsTimeline.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -228,7 +255,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					500000000000000000000001 = {
 						CreatedOnToolsVersion = 16.0;
@@ -281,12 +308,21 @@
 				100000000000000000000004 /* PlayerRole.swift in Sources */,
 				100000000000000000000005 /* TripParticipant.swift in Sources */,
 				100000000000000000000011 /* TravelStyle.swift in Sources */,
+				100000000000000000000015 /* RoleOption.swift in Sources */,
+				100000000000000000000018 /* ChallengeBoard.swift in Sources */,
 				100000000000000000000006 /* TripSessionViewModel.swift in Sources */,
 				100000000000000000000007 /* MockChallengeEngine.swift in Sources */,
 				100000000000000000000008 /* MockChallenges.swift in Sources */,
 				100000000000000000000012 /* MockTravelStyles.swift in Sources */,
+				100000000000000000000016 /* MockRoleOptions.swift in Sources */,
+				100000000000000000000019 /* MockChallengeBoards.swift in Sources */,
+				100000000000000000000017 /* RoleSelectionCard.swift in Sources */,
 				100000000000000000000013 /* TravelStyleCard.swift in Sources */,
 				100000000000000000000014 /* TravelStyleSelectionView.swift in Sources */,
+				10000000000000000000001A /* ChallengeBoardView.swift in Sources */,
+				10000000000000000000001B /* ClaimableItemCard.swift in Sources */,
+				10000000000000000000001C /* ChallengeProgressHeader.swift in Sources */,
+				10000000000000000000001D /* RecentClaimsTimeline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +385,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -403,6 +440,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;

@@ -3,6 +3,7 @@ import SwiftUI
 struct TravelStyleSelectionView: View {
     @EnvironmentObject private var viewModel: TripSessionViewModel
     @State private var selectedStyle: TravelStyle?
+    @State private var showRoleSelection = false
     @State private var appeared = false
 
     private let travelStyles = MockTravelStyles.all
@@ -57,6 +58,12 @@ struct TravelStyleSelectionView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(.hidden, for: .navigationBar)
         .preferredColorScheme(.dark)
+        .navigationDestination(isPresented: $showRoleSelection) {
+            RoleSelectionView(
+                tripName: selectedStyle.map { "\($0.title) Trip" } ?? "WAYPIN Road Trip",
+                playerName: "Road Crew"
+            )
+        }
         .onAppear {
             appeared = true
         }
@@ -83,7 +90,8 @@ struct TravelStyleSelectionView: View {
                 return
             }
 
-            viewModel.beginAdventure(with: selectedStyle)
+            viewModel.selectTravelStyle(selectedStyle)
+            showRoleSelection = true
         } label: {
             HStack {
                 Text("Begin Adventure")

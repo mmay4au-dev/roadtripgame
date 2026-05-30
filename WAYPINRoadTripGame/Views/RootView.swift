@@ -8,7 +8,12 @@ struct RootView: View {
             if viewModel.session == nil {
                 CreateTripView()
             } else {
-                ActiveTripDashboardView()
+                ActiveTripDashboardView(
+                    tripName: viewModel.session?.name ?? "WAYPIN Road Trip",
+                    selectedTravelStyle: viewModel.selectedTravelStyle,
+                    selectedPlayerRole: viewModel.selectedRole,
+                    playerName: viewModel.currentParticipant?.displayName ?? viewModel.playerName
+                )
             }
         }
     }

@@ -1,27 +1,14 @@
 import SwiftUI
 
 struct ChallengeListView: View {
-    @EnvironmentObject private var viewModel: TripSessionViewModel
-
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    ForEach(viewModel.challenges) { challenge in
-                        ChallengeRow(challenge: challenge)
-                    }
-                } header: {
-                    Text("Mock Challenges")
-                } footer: {
-                    Text("Challenge completion is local-only for the MVP.")
-                }
-            }
-            .navigationTitle("Challenges")
+            ChallengeBoardView()
         }
     }
 }
 
-private struct ChallengeRow: View {
+struct ChallengeRow: View {
     @EnvironmentObject private var viewModel: TripSessionViewModel
     let challenge: RoadTripChallenge
 
